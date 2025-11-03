@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Malgudi Days",
+    "description": "A collection of short stories by R.K. Narayan.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/f/fb/Malgudi_Days.jpg"
+  },
+  {
+    "name": "Five Point Someone",
+    "description": "A novel by Chetan Bhagat, exploring student life at IIT.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/6/6b/Five_Point_Someone.jpg"
+  },
+  {
+    "name": "The God of Small Things",
+    "description": "Booker Prize-winning novel by Arundhati Roy.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/1/15/The_God_of_Small_Things.jpg"
+  },
+  {
+    "name": "Wings of Fire",
+    "description": "Autobiography of A.P.J. Abdul Kalam.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/3/3e/Wings_of_Fire_by_A_P_J_Abdul_Kalam_book_cover.jpg"
+  },
+  {
+    "name": "Wise and Otherwise",
+    "description": "A collection of short stories by Sudha Murty.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/b/b0/Wise_and_Otherwise.jpg"
+  }
+]

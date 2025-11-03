@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Indian People - Indian Bookmarked</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>People | Indian Bookmarked</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
-    <h1>Indian People</h1>
+  <header class="flag-header">
+    <h1>🇮🇳 Indian Bookmarked</h1>
     <nav>
       <a href="index.html">Home</a>
+      <a href="people.html" class="active">People</a>
       <a href="books.html">Books</a>
     </nav>
-    <input type="text" id="searchPeople" placeholder="Search people...">
   </header>
 
-  <main id="peopleContainer" class="grid"></main>
+  <section class="controls">
+    <input type="text" id="searchInput" placeholder="Search people..." />
+    <div>
+      <button onclick="showTop('people')">Top</button>
+      <button onclick="showRandom('people')">Random</button>
+    </div>
+  </section>
 
-  <script src="script.js"></script>
+  <main id="listContainer" class="list-container"></main>
+
+  <footer>
+    <p>Made with ❤️ in India</p>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,27 @@
+[
+  {
+    "name": "R.K. Narayan",
+    "description": "Indian writer known for his fictional town of Malgudi.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3e/RK_Narayan.jpg"
+  },
+  {
+    "name": "Arundhati Roy",
+    "description": "Author of 'The God of Small Things' and political activist.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Arundhati_Roy_W.jpg"
+  },
+  {
+    "name": "Chetan Bhagat",
+    "description": "Popular author and columnist known for youth-oriented novels.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/33/Chetan_Bhagat.jpg"
+  },
+  {
+    "name": "APJ Abdul Kalam",
+    "description": "Scientist and former President of India, known as the 'Missile Man'.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/A._P._J._Abdul_Kalam_in_2008.jpg"
+  },
+  {
+    "name": "Sudha Murty",
+    "description": "Author, philanthropist, and chairperson of Infosys Foundation.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/Sudha_Murthy_in_2019.jpg"
+  }
+]
