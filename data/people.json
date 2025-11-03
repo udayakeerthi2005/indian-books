@@ -2,65 +2,89 @@
   {
     "name": "A.P.J. Abdul Kalam",
     "description": "Former President of India and scientist known for his vision and humility.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/A._P._J._Abdul_Kalam.jpg",
-    "books": ["Wings of Fire", "Ignited Minds", "The Discovery of India"],
+    "image": "images/a p j abdul kalam.jpg",
+  "books": ["Wings of Fire"],
     "popularity": 98,
-    "date": "2024-12-01"
+    "date": "2024-12-01",
+    "birth_date": "1931-10-15",
+    "occupation": "Scientist, Aerospace Engineer, President of India",
+    "achievements": "Developed India's missile program, Awarded Bharat Ratna, Known as Missile Man of India"
   },
   {
     "name": "Ratan Tata",
     "description": "Industrialist and philanthropist who led the Tata Group to global heights.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Ratan_Tata_photo.jpg",
-    "books": ["Shoe Dog", "Steve Jobs", "Good to Great"],
+    "image": "images/ratan tata.jpg",
+  "books": ["Steve Jobs"],
     "popularity": 95,
-    "date": "2025-01-12"
+    "date": "2025-01-12",
+    "birth_date": "1937-12-28",
+    "occupation": "Industrialist, Philanthropist",
+    "achievements": "Expanded Tata Group globally, Known for philanthropy and leadership"
   },
   {
     "name": "Priyanka Chopra Jonas",
     "description": "Actress and producer with a global influence in entertainment and philanthropy.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Priyanka_Chopra_at_Baywatch_Premiere.jpg",
-    "books": ["Becoming", "The Alchemist", "Lean In"],
+    "image": "images/priyanka.jpg",
+  "books": ["Becoming", "The Alchemist"],
     "popularity": 90,
-    "date": "2025-02-05"
+    "date": "2025-02-05",
+    "birth_date": "1982-07-18",
+    "occupation": "Actress, Producer, Philanthropist",
+    "achievements": "First Indian to top Billboard charts, UN Ambassador, Global icon"
   },
   {
     "name": "Sundar Pichai",
     "description": "CEO of Alphabet Inc., leading Google and its innovations.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Sundar_Pichai_%28cropped%29.jpg",
-    "books": ["The Innovators", "Zero to One", "Sapiens"],
+    "image": "images/sundarpiche.jpg",
     "popularity": 97,
-    "date": "2024-11-15"
+  "books": ["Sapiens"],
+    "date": "2024-11-15",
+    "birth_date": "1972-06-12",
+    "occupation": "CEO of Alphabet Inc.",
+    "achievements": "Led Google through major growth, Innovator in AI and tech"
   },
   {
     "name": "Virat Kohli",
     "description": "Cricketer known for his aggressive batting and leadership.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Virat_Kohli_during_the_India_vs_Australia_4th_Test_match_at_Narendra_Modi_Stadium_on_09_March_2023.jpg",
-    "books": ["The Zoya Factor", "Azadi", "Playing It My Way"],
+    "image": "images/virat kohli.jpg",
+  "books": [],
     "popularity": 92,
-    "date": "2025-01-20"
+    "date": "2025-01-20",
+    "birth_date": "1988-11-05",
+    "occupation": "Cricketer, Captain of Indian National Team",
+    "achievements": "Most centuries in ODIs, ICC Cricketer of the Year, Brand ambassador"
   },
   {
     "name": "Deepika Padukone",
     "description": "Actress and mental health advocate in Bollywood.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Deepika_Padukone_at_the_2018_Indian_Film_Festival_of_Melbourne.jpg",
-    "books": ["The Girl on the Train", "Educated", "The Silent Patient"],
+    "image": "images/deepika padukone.jpg",
+  "books": [],
     "popularity": 88,
-    "date": "2025-02-15"
+    "date": "2025-02-15",
+    "birth_date": "1986-01-05",
+    "occupation": "Actress, Producer",
+    "achievements": "Padma Shri award, Mental health advocate, Box office success"
   },
   {
     "name": "Narendra Modi",
     "description": "Prime Minister of India, focusing on development and digital India.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Narendra_Modi_2015.jpg",
-    "books": ["The Discovery of India", "My Experiments with Truth", "India 2020"],
+    "image": "images/modi.jpeg",
+  "books": [],
     "popularity": 94,
-    "date": "2024-10-30"
+    "date": "2024-10-30",
+    "birth_date": "1950-09-17",
+    "occupation": "Prime Minister of India",
+    "achievements": "Digital India initiative, Swachh Bharat, Economic reforms"
   },
   {
     "name": "Sachin Tendulkar",
     "description": "Legendary cricketer, the 'God of Cricket'.",
     "image": "https://upload.wikimedia.org/wikipedia/commons/2/25/Sachin_Tendulkar_at_MRF_Promotion_Event.jpg",
-    "books": ["Playing It My Way", "Azadi", "The Zoya Factor"],
+  "books": [],
     "popularity": 96,
-    "date": "2024-12-20"
+    "date": "2024-12-20",
+    "birth_date": "1973-04-24",
+    "occupation": "Cricketer (Retired)",
+    "achievements": "Most runs in cricket history, Bharat Ratna, Global icon"
   }
 ]

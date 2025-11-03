@@ -78,20 +78,18 @@ body {
     width: 230px;
   }
   
-  /* People horizontal scroll */
+  /* People grid layout */
   .people-scroll {
     display: flex;
-    overflow-x: auto;
-    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
     padding: 20px;
-    scroll-snap-type: x mandatory;
   }
-  
+
   .person {
-    flex: 0 0 auto;
-    width: 180px;
+    width: 160px;
     text-align: center;
-    scroll-snap-align: start;
     cursor: pointer;
   }
   
@@ -100,6 +98,15 @@ body {
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .person img[loading="lazy"] {
+    opacity: 0;
+  }
+
+  .person img[loading="lazy"].loaded {
+    opacity: 1;
   }
   
   /* Popup */
@@ -151,6 +158,15 @@ body {
     border-radius: 8px;
     object-fit: cover;
     cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .book img[loading="lazy"] {
+    opacity: 0;
+  }
+
+  .book img[loading="lazy"].loaded {
+    opacity: 1;
   }
 
   /* Person and Book details pages */
@@ -167,6 +183,15 @@ body {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .person-details img[loading="lazy"] {
+    opacity: 0;
+  }
+
+  .person-details img[loading="lazy"].loaded {
+    opacity: 1;
   }
 
   .book-details img {
@@ -175,6 +200,15 @@ body {
     border-radius: 8px;
     object-fit: cover;
     margin-bottom: 20px;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .book-details img[loading="lazy"] {
+    opacity: 0;
+  }
+
+  .book-details img[loading="lazy"].loaded {
+    opacity: 1;
   }
 
   .person-details h1, .book-details h1 {
