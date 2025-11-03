@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Books | Indian Bookmarked</title>
+  <title>Books - Indian Bookmarked</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+  <script defer src="script.js"></script>
 </head>
 <body>
   <header class="flag-header">
@@ -19,15 +19,15 @@
   </header>
 
   <section class="controls">
-    <div class="filters">
-      <button class="filter-btn" data-type="new">New</button>
-      <button class="filter-btn" data-type="top">Top</button>
-      <button class="filter-btn" data-type="random">Random</button>
+    <div class="buttons">
+      <button onclick="filterBooks('new')">New</button>
+      <button onclick="filterBooks('top')">Top</button>
+      <button onclick="filterBooks('random')">Random</button>
     </div>
-    <input type="text" id="searchBooks" placeholder="Search books...">
+    <input type="text" id="bookSearch" placeholder="Search books..." oninput="searchBooks()"/>
   </section>
 
-  <main id="booksList" class="list-section"></main>
+  <main id="bookList" class="book-list"></main>
 
   <footer>
     Made with ❤️ by Keerthi

@@ -2,49 +2,65 @@
   {
     "title": "The Almanack of Naval Ravikant",
     "author": "Eric Jorgenson",
-    "image": "https://m.media-amazon.com/images/I/71m-MxdJ2WL._AC_UF1000,1000_QL80_.jpg",
-    "recommendedBy": ["Kunal Shah"]
+    "image": "https://m.media-amazon.com/images/I/71g2ednj0JL.jpg",
+    "recommended_by": ["Kunal Shah"],
+    "score": 96,
+    "date": "2024-10-11"
   },
   {
     "title": "Zero to One",
     "author": "Peter Thiel",
-    "image": "https://m.media-amazon.com/images/I/71m-MxdJ2WL._AC_UF1000,1000_QL80_.jpg",
-    "recommendedBy": ["Kunal Shah"]
+    "image": "https://m.media-amazon.com/images/I/71m-MxdJ2WL.jpg",
+    "recommended_by": ["Kunal Shah"],
+    "score": 92,
+    "date": "2024-08-25"
   },
   {
     "title": "Atomic Habits",
     "author": "James Clear",
     "image": "https://m.media-amazon.com/images/I/91bYsX41DVL.jpg",
-    "recommendedBy": ["Tanmay Bhat"]
+    "recommended_by": ["Tanmay Bhat"],
+    "score": 95,
+    "date": "2024-08-02"
   },
   {
     "title": "The Subtle Art of Not Giving a F*ck",
     "author": "Mark Manson",
     "image": "https://m.media-amazon.com/images/I/71QKQ9mwV7L.jpg",
-    "recommendedBy": ["Tanmay Bhat"]
-  },
-  {
-    "title": "Man’s Search for Meaning",
-    "author": "Viktor E. Frankl",
-    "image": "https://m.media-amazon.com/images/I/71Xw1Uu2kUL._AC_UF1000,1000_QL80_.jpg",
-    "recommendedBy": ["Nikhil Taneja"]
+    "recommended_by": ["Tanmay Bhat"],
+    "score": 90,
+    "date": "2024-07-20"
   },
   {
     "title": "Deep Work",
     "author": "Cal Newport",
-    "image": "https://m.media-amazon.com/images/I/81Gq9E0uKHL.jpg",
-    "recommendedBy": ["Ankur Warikoo"]
+    "image": "https://m.media-amazon.com/images/I/81pN3bZAWFL.jpg",
+    "recommended_by": ["Ankur Warikoo"],
+    "score": 93,
+    "date": "2024-09-10"
   },
   {
     "title": "The Psychology of Money",
     "author": "Morgan Housel",
-    "image": "https://m.media-amazon.com/images/I/81Lb75rUhLL.jpg",
-    "recommendedBy": ["Ankur Warikoo"]
+    "image": "https://m.media-amazon.com/images/I/71g2ednj0JL._AC_UY327_FMwebp_QL65_.jpg",
+    "recommended_by": ["Ankur Warikoo"],
+    "score": 94,
+    "date": "2024-09-12"
+  },
+  {
+    "title": "Man’s Search for Meaning",
+    "author": "Viktor E. Frankl",
+    "image": "https://m.media-amazon.com/images/I/81WcnNQ-TBL.jpg",
+    "recommended_by": ["Nikhil Taneja"],
+    "score": 89,
+    "date": "2024-11-01"
   },
   {
     "title": "Shoe Dog",
     "author": "Phil Knight",
-    "image": "https://m.media-amazon.com/images/I/81zk4zdcYWL.jpg",
-    "recommendedBy": ["Ritesh Agarwal"]
+    "image": "https://m.media-amazon.com/images/I/81rWuMbd1wL.jpg",
+    "recommended_by": ["Ritesh Agarwal"],
+    "score": 88,
+    "date": "2024-07-25"
   }
 ]

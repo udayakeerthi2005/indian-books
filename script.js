@@ -1,86 +1,83 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const peopleContainer = document.getElementById("peopleList");
-    const booksContainer = document.getElementById("booksList");
-    const searchPeople = document.getElementById("searchPeople");
-    const searchBooks = document.getElementById("searchBooks");
+async function loadPeople() {
+    const res = await fetch("data/people.json");
+    const people = await res.json();
+    displayPeople(people);
+    window.peopleData = people;
+  }
   
-    const page = peopleContainer ? "people" : booksContainer ? "books" : "home";
+  function displayPeople(list) {
+    const container = document.getElementById("peopleList");
+    container.innerHTML = "";
+    list.forEach(p => {
+      const div = document.createElement("div");
+      div.className = "person";
+      div.innerHTML = `
+        <img src="${p.image}" alt="${p.name}">
+        <h3>${p.name}</h3>
+        <p>${p.description}</p>
+        <p class="books">Recommended ${p.books.length} books</p>
+      `;
+      div.addEventListener("click", () => showBooks(p));
+      container.appendChild(div);
+    });
+  }
   
-    if (page === "people") loadPeople();
-    if (page === "books") loadBooks();
+  function showBooks(person) {
+    alert(`${person.name}'s recommended books:\n\n${person.books.join("\n")}`);
+  }
   
-    async function loadPeople() {
-      const res = await fetch("data/people.json");
-      const people = await res.json();
-      renderPeople(people);
+  function filterPeople(type) {
+    let data = [...window.peopleData];
+    if (type === "top") data.sort((a, b) => b.score - a.score);
+    if (type === "new") data.sort((a, b) => new Date(b.date) - new Date(a.date));
+    if (type === "random") data.sort(() => Math.random() - 0.5);
+    displayPeople(data);
+  }
   
-      document.querySelectorAll(".filter-btn").forEach(btn =>
-        btn.addEventListener("click", () => {
-          const type = btn.dataset.type;
-          let sorted = [...people];
-          if (type === "new") sorted.reverse();
-          else if (type === "top") sorted.sort(() => 0.5 - Math.random());
-          else if (type === "random") sorted.sort(() => 0.5 - Math.random());
-          renderPeople(sorted);
-        })
-      );
+  function searchPeople() {
+    const term = document.getElementById("peopleSearch").value.toLowerCase();
+    const filtered = window.peopleData.filter(p => p.name.toLowerCase().includes(term));
+    displayPeople(filtered);
+  }
   
-      searchPeople.addEventListener("input", e => {
-        const q = e.target.value.toLowerCase();
-        const filtered = people.filter(p => p.name.toLowerCase().includes(q));
-        renderPeople(filtered);
-      });
-    }
+  async function loadBooks() {
+    const res = await fetch("data/books.json");
+    const books = await res.json();
+    displayBooks(books);
+    window.bookData = books;
+  }
   
-    function renderPeople(data) {
-      peopleContainer.innerHTML = data.map(p => `
-        <div class="person">
-          <img src="${p.image}" alt="${p.name}">
-          <div class="person-info">
-            <h3>${p.name}</h3>
-            <p>${p.description}</p>
-            <div class="recommended-books">
-              Recommended ${p.books.length} books: ${p.books.map(b => `<em>${b}</em>`).join(", ")}
-            </div>
-          </div>
-        </div>
-      `).join("");
-    }
+  function displayBooks(list) {
+    const container = document.getElementById("bookList");
+    container.innerHTML = "";
+    list.forEach(b => {
+      const div = document.createElement("div");
+      div.className = "book";
+      div.innerHTML = `
+        <img src="${b.image}" alt="${b.title}">
+        <h4>${b.title}</h4>
+        <p>${b.author}</p>
+        <p>Recommended by ${b.recommended_by.join(", ")}</p>
+      `;
+      container.appendChild(div);
+    });
+  }
   
-    async function loadBooks() {
-      const res = await fetch("data/books.json");
-      const books = await res.json();
-      renderBooks(books);
+  function filterBooks(type) {
+    let data = [...window.bookData];
+    if (type === "top") data.sort((a, b) => b.score - a.score);
+    if (type === "new") data.sort((a, b) => new Date(b.date) - new Date(a.date));
+    if (type === "random") data.sort(() => Math.random() - 0.5);
+    displayBooks(data);
+  }
   
-      document.querySelectorAll(".filter-btn").forEach(btn =>
-        btn.addEventListener("click", () => {
-          const type = btn.dataset.type;
-          let sorted = [...books];
-          if (type === "new") sorted.reverse();
-          else if (type === "top") sorted.sort(() => 0.5 - Math.random());
-          else if (type === "random") sorted.sort(() => 0.5 - Math.random());
-          renderBooks(sorted);
-        })
-      );
+  function searchBooks() {
+    const term = document.getElementById("bookSearch").value.toLowerCase();
+    const filtered = window.bookData.filter(b => b.title.toLowerCase().includes(term));
+    displayBooks(filtered);
+  }
   
-      searchBooks.addEventListener("input", e => {
-        const q = e.target.value.toLowerCase();
-        const filtered = books.filter(b => b.title.toLowerCase().includes(q));
-        renderBooks(filtered);
-      });
-    }
-  
-    function renderBooks(data) {
-      booksContainer.innerHTML = data.map(b => `
-        <div class="book">
-          <img src="${b.image}" alt="${b.title}">
-          <div class="book-info">
-            <h3>${b.title}</h3>
-            <p>by ${b.author}</p>
-            <div class="recommended-by">Recommended by ${b.recommendedBy.join(", ")}</div>
-          </div>
-        </div>
-      `).join("");
-    }
-  });
+  // Auto-load based on page
+  if (location.pathname.endsWith("people.html")) loadPeople();
+  if (location.pathname.endsWith("books.html")) loadBooks();
   

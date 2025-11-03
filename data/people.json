@@ -2,31 +2,41 @@
   {
     "name": "Kunal Shah",
     "description": "Founder of CRED",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Kunal_Shah.jpg",
-    "books": ["The Almanack of Naval Ravikant", "Zero to One"]
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Kunal_Shah_2020.jpg",
+    "books": ["The Almanack of Naval Ravikant", "Zero to One"],
+    "score": 95,
+    "date": "2024-10-10"
   },
   {
     "name": "Tanmay Bhat",
-    "description": "Comedian & Entrepreneur",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Tanmay_Bhat.jpg",
-    "books": ["Atomic Habits", "The Subtle Art of Not Giving a F*ck"]
+    "description": "Comedian & Creator",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Tanmay_Bhat.jpg",
+    "books": ["Atomic Habits", "The Subtle Art of Not Giving a F*ck"],
+    "score": 90,
+    "date": "2024-08-02"
+  },
+  {
+    "name": "Ankur Warikoo",
+    "description": "Entrepreneur & Educator",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Ankur_Warikoo.jpg",
+    "books": ["Deep Work", "The Psychology of Money"],
+    "score": 92,
+    "date": "2024-09-15"
   },
   {
     "name": "Nikhil Taneja",
     "description": "Co-founder, Yuvaa",
-    "image": "https://yt3.googleusercontent.com/ytc/AIdro_mgnt-4QWyiK8ee8sukB9Wzz8GcBXMm0YvQ8LZx=s900-c-k-c0x00ffffff-no-rj",
-    "books": ["Man’s Search for Meaning"]
-  },
-  {
-    "name": "Ankur Warikoo",
-    "description": "Entrepreneur, Creator",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/7/73/Ankur_Warikoo_profile.jpg",
-    "books": ["Deep Work", "The Psychology of Money"]
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Nikhil_Taneja_2022.jpg",
+    "books": ["Man’s Search for Meaning"],
+    "score": 85,
+    "date": "2024-11-01"
   },
   {
     "name": "Ritesh Agarwal",
     "description": "Founder of OYO",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Ritesh_Agarwal.jpg",
-    "books": ["Shoe Dog"]
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/Ritesh_Agarwal_at_GES_2019.jpg",
+    "books": ["Shoe Dog"],
+    "score": 88,
+    "date": "2024-07-25"
   }
 ]
