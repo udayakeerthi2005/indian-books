@@ -1,27 +1,61 @@
 [
   {
-    "name": "R.K. Narayan",
-    "description": "Indian writer known for his fictional town of Malgudi.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3e/RK_Narayan.jpg"
+    "name": "Kunal Shah",
+    "description": "Founder, CRED. Writer & startup thinker.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Kunal_shah.jpg",
+    "books": [
+      { "title": "The Almanack of Naval Ravikant", "cover": "https://m.media-amazon.com/images/I/51mJ7Z6JgzL._SX331_BO1,204,203,200_.jpg", "link": "books.html?q=The%20Almanack%20of%20Naval%20Ravikant" },
+      { "title": "Zero to One", "cover": "https://upload.wikimedia.org/wikipedia/en/1/11/Zero_to_One_book_cover.jpg", "link": "books.html?q=Zero%20to%20One" }
+    ]
   },
   {
-    "name": "Arundhati Roy",
-    "description": "Author of 'The God of Small Things' and political activist.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Arundhati_Roy_W.jpg"
+    "name": "Nithin Kamath",
+    "description": "Founder, Zerodha. Trader and fintech entrepreneur.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Nithin_Kamath.jpg",
+    "books": [
+      { "title": "The Psychology of Money", "cover": "https://images-na.ssl-images-amazon.com/images/I/71Lx6Zxq5HL.jpg", "link": "books.html?q=The%20Psychology%20of%20Money" },
+      { "title": "Sapiens", "cover": "https://upload.wikimedia.org/wikipedia/en/c/cb/Sapiens_A_Brief_History_of_Humankind.jpg", "link": "books.html?q=Sapiens" }
+    ]
   },
   {
-    "name": "Chetan Bhagat",
-    "description": "Popular author and columnist known for youth-oriented novels.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/3/33/Chetan_Bhagat.jpg"
+    "name": "Tanmay Bhat",
+    "description": "Comedian, writer and creator.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/77/Tanmay_Bhat.jpg",
+    "books": [
+      { "title": "Atomic Habits", "cover": "https://images-na.ssl-images-amazon.com/images/I/51-nXsSRfZL._SX329_BO1,204,203,200_.jpg", "link": "books.html?q=Atomic%20Habits" }
+    ]
   },
   {
-    "name": "APJ Abdul Kalam",
-    "description": "Scientist and former President of India, known as the 'Missile Man'.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/A._P._J._Abdul_Kalam_in_2008.jpg"
+    "name": "Ritesh Agarwal",
+    "description": "Founder, OYO. Built global hospitality startup.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Ritesh_Agarwal.jpg",
+    "books": [
+      { "title": "Shoe Dog", "cover": "https://upload.wikimedia.org/wikipedia/en/7/7d/Shoe_Dog.jpg", "link": "books.html?q=Shoe%20Dog" }
+    ]
+  },
+  {
+    "name": "Ankur Warikoo",
+    "description": "Entrepreneur, mentor, and creator.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Ankur_Warikoo.jpg",
+    "books": [
+      { "title": "Deep Work", "cover": "https://upload.wikimedia.org/wikipedia/en/7/7e/Deep_Work_cover.jpg", "link": "books.html?q=Deep%20Work" },
+      { "title": "Rework", "cover": "https://upload.wikimedia.org/wikipedia/en/0/0b/Rework_cover.jpg", "link": "books.html?q=Rework" }
+    ]
+  },
+  {
+    "name": "Ratan Tata",
+    "description": "Industrialist and philanthropist.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/55/Ratan_Tata.jpg",
+    "books": [
+      { "title": "Autobiography of a Yogi", "cover": "https://images-na.ssl-images-amazon.com/images/I/51Y3irXg1FL.jpg", "link": "books.html?q=Autobiography%20of%20a%20Yogi" }
+    ]
   },
   {
     "name": "Sudha Murty",
-    "description": "Author, philanthropist, and chairperson of Infosys Foundation.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/Sudha_Murthy_in_2019.jpg"
+    "description": "Author, philanthropist and educator.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/Sudha_Murthy_in_2019.jpg",
+    "books": [
+      { "title": "Wise and Otherwise", "cover": "https://upload.wikimedia.org/wikipedia/en/b/b0/Wise_and_Otherwise.jpg", "link": "books.html?q=Wise%20and%20Otherwise" }
+    ]
   }
 ]

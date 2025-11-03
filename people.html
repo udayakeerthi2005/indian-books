@@ -1,34 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>People | Indian Bookmarked</title>
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
 <body>
   <header class="flag-header">
-    <h1>🇮🇳 Indian Bookmarked</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="people.html" class="active">People</a>
-      <a href="books.html">Books</a>
-    </nav>
+    <div class="header-inner">
+      <h1 class="site-title">🇮🇳 Indian Bookmarked</h1>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="people.html" class="active">People</a>
+        <a href="books.html">Books</a>
+      </nav>
+    </div>
   </header>
 
   <section class="controls">
-    <input type="text" id="searchInput" placeholder="Search people..." />
-    <div>
-      <button onclick="showTop('people')">Top</button>
-      <button onclick="showRandom('people')">Random</button>
+    <input id="searchInput" placeholder="Search people or recommended books..." />
+    <div class="control-buttons">
+      <button id="topBtn" data-type="people">Top</button>
+      <button id="newBtn" data-type="people">New</button>
+      <button id="randomBtn" data-type="people">Random</button>
     </div>
   </section>
 
-  <main id="listContainer" class="list-container"></main>
+  <main id="listContainer" class="list-container" aria-live="polite"></main>
 
   <footer>
-    <p>Made with ❤️ in India</p>
+    <p>Made with ❤️ by Keerthi</p>
   </footer>
 </body>
 </html>
