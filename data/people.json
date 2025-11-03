@@ -1,61 +1,32 @@
 [
   {
     "name": "Kunal Shah",
-    "description": "Founder, CRED. Writer & startup thinker.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Kunal_shah.jpg",
-    "books": [
-      { "title": "The Almanack of Naval Ravikant", "cover": "https://m.media-amazon.com/images/I/51mJ7Z6JgzL._SX331_BO1,204,203,200_.jpg", "link": "books.html?q=The%20Almanack%20of%20Naval%20Ravikant" },
-      { "title": "Zero to One", "cover": "https://upload.wikimedia.org/wikipedia/en/1/11/Zero_to_One_book_cover.jpg", "link": "books.html?q=Zero%20to%20One" }
-    ]
-  },
-  {
-    "name": "Nithin Kamath",
-    "description": "Founder, Zerodha. Trader and fintech entrepreneur.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Nithin_Kamath.jpg",
-    "books": [
-      { "title": "The Psychology of Money", "cover": "https://images-na.ssl-images-amazon.com/images/I/71Lx6Zxq5HL.jpg", "link": "books.html?q=The%20Psychology%20of%20Money" },
-      { "title": "Sapiens", "cover": "https://upload.wikimedia.org/wikipedia/en/c/cb/Sapiens_A_Brief_History_of_Humankind.jpg", "link": "books.html?q=Sapiens" }
-    ]
+    "description": "Founder of CRED",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Kunal_Shah.jpg",
+    "books": ["The Almanack of Naval Ravikant", "Zero to One"]
   },
   {
     "name": "Tanmay Bhat",
-    "description": "Comedian, writer and creator.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/7/77/Tanmay_Bhat.jpg",
-    "books": [
-      { "title": "Atomic Habits", "cover": "https://images-na.ssl-images-amazon.com/images/I/51-nXsSRfZL._SX329_BO1,204,203,200_.jpg", "link": "books.html?q=Atomic%20Habits" }
-    ]
+    "description": "Comedian & Entrepreneur",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Tanmay_Bhat.jpg",
+    "books": ["Atomic Habits", "The Subtle Art of Not Giving a F*ck"]
   },
   {
-    "name": "Ritesh Agarwal",
-    "description": "Founder, OYO. Built global hospitality startup.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Ritesh_Agarwal.jpg",
-    "books": [
-      { "title": "Shoe Dog", "cover": "https://upload.wikimedia.org/wikipedia/en/7/7d/Shoe_Dog.jpg", "link": "books.html?q=Shoe%20Dog" }
-    ]
+    "name": "Nikhil Taneja",
+    "description": "Co-founder, Yuvaa",
+    "image": "https://yt3.googleusercontent.com/ytc/AIdro_mgnt-4QWyiK8ee8sukB9Wzz8GcBXMm0YvQ8LZx=s900-c-k-c0x00ffffff-no-rj",
+    "books": ["Man’s Search for Meaning"]
   },
   {
     "name": "Ankur Warikoo",
-    "description": "Entrepreneur, mentor, and creator.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Ankur_Warikoo.jpg",
-    "books": [
-      { "title": "Deep Work", "cover": "https://upload.wikimedia.org/wikipedia/en/7/7e/Deep_Work_cover.jpg", "link": "books.html?q=Deep%20Work" },
-      { "title": "Rework", "cover": "https://upload.wikimedia.org/wikipedia/en/0/0b/Rework_cover.jpg", "link": "books.html?q=Rework" }
-    ]
+    "description": "Entrepreneur, Creator",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/73/Ankur_Warikoo_profile.jpg",
+    "books": ["Deep Work", "The Psychology of Money"]
   },
   {
-    "name": "Ratan Tata",
-    "description": "Industrialist and philanthropist.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/5/55/Ratan_Tata.jpg",
-    "books": [
-      { "title": "Autobiography of a Yogi", "cover": "https://images-na.ssl-images-amazon.com/images/I/51Y3irXg1FL.jpg", "link": "books.html?q=Autobiography%20of%20a%20Yogi" }
-    ]
-  },
-  {
-    "name": "Sudha Murty",
-    "description": "Author, philanthropist and educator.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/Sudha_Murthy_in_2019.jpg",
-    "books": [
-      { "title": "Wise and Otherwise", "cover": "https://upload.wikimedia.org/wikipedia/en/b/b0/Wise_and_Otherwise.jpg", "link": "books.html?q=Wise%20and%20Otherwise" }
-    ]
+    "name": "Ritesh Agarwal",
+    "description": "Founder of OYO",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Ritesh_Agarwal.jpg",
+    "books": ["Shoe Dog"]
   }
 ]

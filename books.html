@@ -1,37 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Books | Indian Bookmarked</title>
   <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header class="flag-header">
-    <div class="header-inner">
-      <h1 class="site-title">🇮🇳 Indian Bookmarked</h1>
-      <nav class="main-nav">
-        <a href="index.html">Home</a>
+    <nav>
+      <a href="index.html" class="logo">🇮🇳 Indian Bookmarked</a>
+      <div class="nav-links">
         <a href="people.html">People</a>
         <a href="books.html" class="active">Books</a>
-      </nav>
-    </div>
+      </div>
+    </nav>
   </header>
 
   <section class="controls">
-    <input id="searchInput" placeholder="Search books, authors or recommended by..." />
-    <div class="control-buttons">
-      <button id="topBtn" data-type="books">Top</button>
-      <button id="newBtn" data-type="books">New</button>
-      <button id="randomBtn" data-type="books">Random</button>
+    <div class="filters">
+      <button class="filter-btn" data-type="new">New</button>
+      <button class="filter-btn" data-type="top">Top</button>
+      <button class="filter-btn" data-type="random">Random</button>
     </div>
+    <input type="text" id="searchBooks" placeholder="Search books...">
   </section>
 
-  <main id="listContainer" class="list-container" aria-live="polite"></main>
+  <main id="booksList" class="list-section"></main>
 
   <footer>
-    <p>Made with ❤️ by Keerthi</p>
+    Made with ❤️ by Keerthi
   </footer>
 </body>
 </html>

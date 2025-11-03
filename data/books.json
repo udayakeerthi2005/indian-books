@@ -1,72 +1,50 @@
 [
   {
-    "name": "The Almanack of Naval Ravikant",
-    "author": "Naval Ravikant (compiled by Eric Jorgenson)",
-    "description": "Collection of Naval's wisdom on wealth and happiness.",
-    "image": "https://m.media-amazon.com/images/I/51mJ7Z6JgzL._SX331_BO1,204,203,200_.jpg",
+    "title": "The Almanack of Naval Ravikant",
+    "author": "Eric Jorgenson",
+    "image": "https://m.media-amazon.com/images/I/71m-MxdJ2WL._AC_UF1000,1000_QL80_.jpg",
     "recommendedBy": ["Kunal Shah"]
   },
   {
-    "name": "Zero to One",
+    "title": "Zero to One",
     "author": "Peter Thiel",
-    "description": "Notes on startups, innovation and building the future.",
-    "image": "https://upload.wikimedia.org/wikipedia/en/1/11/Zero_to_One_book_cover.jpg",
+    "image": "https://m.media-amazon.com/images/I/71m-MxdJ2WL._AC_UF1000,1000_QL80_.jpg",
     "recommendedBy": ["Kunal Shah"]
   },
   {
-    "name": "The Psychology of Money",
-    "author": "Morgan Housel",
-    "description": "Essays on money, greed, and human behavior.",
-    "image": "https://images-na.ssl-images-amazon.com/images/I/71Lx6Zxq5HL.jpg",
-    "recommendedBy": ["Nithin Kamath"]
-  },
-  {
-    "name": "Sapiens",
-    "author": "Yuval Noah Harari",
-    "description": "A brief history of humankind.",
-    "image": "https://upload.wikimedia.org/wikipedia/en/c/cb/Sapiens_A_Brief_History_of_Humankind.jpg",
-    "recommendedBy": ["Nithin Kamath"]
-  },
-  {
-    "name": "Atomic Habits",
+    "title": "Atomic Habits",
     "author": "James Clear",
-    "description": "Tiny changes, remarkable results—habit formation strategies.",
-    "image": "https://images-na.ssl-images-amazon.com/images/I/51-nXsSRfZL._SX329_BO1,204,203,200_.jpg",
+    "image": "https://m.media-amazon.com/images/I/91bYsX41DVL.jpg",
     "recommendedBy": ["Tanmay Bhat"]
   },
   {
-    "name": "Shoe Dog",
-    "author": "Phil Knight",
-    "description": "A memoir by the creator of Nike.",
-    "image": "https://upload.wikimedia.org/wikipedia/en/7/7d/Shoe_Dog.jpg",
-    "recommendedBy": ["Ritesh Agarwal"]
+    "title": "The Subtle Art of Not Giving a F*ck",
+    "author": "Mark Manson",
+    "image": "https://m.media-amazon.com/images/I/71QKQ9mwV7L.jpg",
+    "recommendedBy": ["Tanmay Bhat"]
   },
   {
-    "name": "Deep Work",
+    "title": "Man’s Search for Meaning",
+    "author": "Viktor E. Frankl",
+    "image": "https://m.media-amazon.com/images/I/71Xw1Uu2kUL._AC_UF1000,1000_QL80_.jpg",
+    "recommendedBy": ["Nikhil Taneja"]
+  },
+  {
+    "title": "Deep Work",
     "author": "Cal Newport",
-    "description": "Rules for focused success in a distracted world.",
-    "image": "https://upload.wikimedia.org/wikipedia/en/7/7e/Deep_Work_cover.jpg",
+    "image": "https://m.media-amazon.com/images/I/81Gq9E0uKHL.jpg",
     "recommendedBy": ["Ankur Warikoo"]
   },
   {
-    "name": "Rework",
-    "author": "Jason Fried & David Heinemeier Hansson",
-    "description": "New approach to work and building small businesses.",
-    "image": "https://upload.wikimedia.org/wikipedia/en/0/0b/Rework_cover.jpg",
+    "title": "The Psychology of Money",
+    "author": "Morgan Housel",
+    "image": "https://m.media-amazon.com/images/I/81Lb75rUhLL.jpg",
     "recommendedBy": ["Ankur Warikoo"]
   },
   {
-    "name": "Autobiography of a Yogi",
-    "author": "Paramahansa Yogananda",
-    "description": "Spiritual classic and widely read autobiography.",
-    "image": "https://images-na.ssl-images-amazon.com/images/I/51Y3irXg1FL.jpg",
-    "recommendedBy": ["Ratan Tata"]
-  },
-  {
-    "name": "Wise and Otherwise",
-    "author": "Sudha Murty",
-    "description": "Short stories and reflections by Sudha Murty.",
-    "image": "https://upload.wikimedia.org/wikipedia/en/b/b0/Wise_and_Otherwise.jpg",
-    "recommendedBy": ["Sudha Murty"]
+    "title": "Shoe Dog",
+    "author": "Phil Knight",
+    "image": "https://m.media-amazon.com/images/I/81zk4zdcYWL.jpg",
+    "recommendedBy": ["Ritesh Agarwal"]
   }
 ]
