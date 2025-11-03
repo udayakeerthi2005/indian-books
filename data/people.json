@@ -22,5 +22,45 @@
     "books": ["Becoming", "The Alchemist", "Lean In"],
     "popularity": 90,
     "date": "2025-02-05"
+  },
+  {
+    "name": "Sundar Pichai",
+    "description": "CEO of Alphabet Inc., leading Google and its innovations.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Sundar_Pichai_%28cropped%29.jpg",
+    "books": ["The Innovators", "Zero to One", "Sapiens"],
+    "popularity": 97,
+    "date": "2024-11-15"
+  },
+  {
+    "name": "Virat Kohli",
+    "description": "Cricketer known for his aggressive batting and leadership.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Virat_Kohli_during_the_India_vs_Australia_4th_Test_match_at_Narendra_Modi_Stadium_on_09_March_2023.jpg",
+    "books": ["The Zoya Factor", "Azadi", "Playing It My Way"],
+    "popularity": 92,
+    "date": "2025-01-20"
+  },
+  {
+    "name": "Deepika Padukone",
+    "description": "Actress and mental health advocate in Bollywood.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Deepika_Padukone_at_the_2018_Indian_Film_Festival_of_Melbourne.jpg",
+    "books": ["The Girl on the Train", "Educated", "The Silent Patient"],
+    "popularity": 88,
+    "date": "2025-02-15"
+  },
+  {
+    "name": "Narendra Modi",
+    "description": "Prime Minister of India, focusing on development and digital India.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Narendra_Modi_2015.jpg",
+    "books": ["The Discovery of India", "My Experiments with Truth", "India 2020"],
+    "popularity": 94,
+    "date": "2024-10-30"
+  },
+  {
+    "name": "Sachin Tendulkar",
+    "description": "Legendary cricketer, the 'God of Cricket'.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/25/Sachin_Tendulkar_at_MRF_Promotion_Event.jpg",
+    "books": ["Playing It My Way", "Azadi", "The Zoya Factor"],
+    "popularity": 96,
+    "date": "2024-12-20"
   }
 ]

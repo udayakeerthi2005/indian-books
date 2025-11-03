@@ -150,5 +150,62 @@ body {
     height: 220px;
     border-radius: 8px;
     object-fit: cover;
+    cursor: pointer;
+  }
+
+  /* Person and Book details pages */
+  .person-details, .book-details {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .person-details img, .book-details img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  .book-details img {
+    width: 200px;
+    height: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  .person-details h1, .book-details h1 {
+    margin-bottom: 10px;
+  }
+
+  .person-details p, .book-details p {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .recommended-books, .recommended-by {
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+
+  .recommended-books ul, .recommended-by ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .recommended-books li, .recommended-by li {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .recommended-books li:hover, .recommended-by li:hover {
+    background: #f9f9f9;
   }
   

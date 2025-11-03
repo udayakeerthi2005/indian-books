@@ -32,6 +32,20 @@
 
   <div class="book-list" id="bookList"></div>
 
+  <script>
+    // Add onclick to book divs
+    document.addEventListener('DOMContentLoaded', function() {
+      const bookList = document.getElementById('bookList');
+      bookList.addEventListener('click', function(e) {
+        const bookDiv = e.target.closest('.book');
+        if (bookDiv) {
+          const title = bookDiv.querySelector('h4').textContent;
+          window.location.href = `book.html?id=${encodeURIComponent(title)}`;
+        }
+      });
+    });
+  </script>
+
   <footer>Made with ❤️ by Keerthi</footer>
 </body>
 </html>

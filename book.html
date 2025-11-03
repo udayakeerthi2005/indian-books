@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>People | Indian Bookmarked</title>
+  <title>Book | Indian Bookmarked</title>
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
@@ -13,24 +13,15 @@
       <h2>📚 Indian Bookmarked</h2>
       <div>
         <a href="index.html">Home</a>
-        <a href="people.html" class="active">People</a>
+        <a href="people.html">People</a>
         <a href="books.html">Books</a>
       </div>
     </nav>
   </header>
 
-  <h1>People</h1>
-
-  <div class="controls">
-    <div class="buttons">
-      <button onclick="filterPeople('new')">New</button>
-      <button onclick="filterPeople('top')">Top</button>
-      <button onclick="filterPeople('random')">Random</button>
-    </div>
-    <input type="text" id="peopleSearch" onkeyup="searchPeople()" placeholder="Search people...">
+  <div id="bookDetails" class="book-details">
+    <!-- Book details will be loaded here -->
   </div>
-
-  <div class="people-scroll" id="peopleList"></div>
 
   <footer>Made with ❤️ by Keerthi</footer>
 </body>

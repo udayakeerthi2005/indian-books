@@ -16,27 +16,12 @@ async function loadPeople() {
         <h4>${p.name}</h4>
         <small>${p.books.length} books</small>
       `;
-      div.onclick = () => showPopup(p);
+      div.onclick = () => window.location.href = `person.html?id=${encodeURIComponent(p.name)}`;
       container.appendChild(div);
     });
   }
   
-  function showPopup(person) {
-    const popup = document.getElementById("popup");
-    const details = document.getElementById("popupDetails");
-    details.innerHTML = `
-      <img src="${person.image}" alt="${person.name}">
-      <h2>${person.name}</h2>
-      <p>${person.description}</p>
-      <h3>Recommended Books:</h3>
-      <ul>${person.books.map(b => `<li>📘 ${b}</li>`).join("")}</ul>
-    `;
-    popup.style.display = "block";
-  }
-  
-  function closePopup() {
-    document.getElementById("popup").style.display = "none";
-  }
+
   
   function filterPeople(type) {
     let data = [...window.peopleData];
@@ -88,7 +73,61 @@ async function loadPeople() {
     const filtered = window.bookData.filter(b => b.title.toLowerCase().includes(term));
     displayBooks(filtered);
   }
-  
+
+  async function loadPersonDetails(name) {
+    const res = await fetch("data/people.json");
+    const people = await res.json();
+    const person = people.find(p => p.name === name);
+    if (person) {
+      const container = document.getElementById("personDetails");
+      container.innerHTML = `
+        <img src="${person.image}" alt="${person.name}">
+        <h1>${person.name}</h1>
+        <p>${person.description}</p>
+        <div class="recommended-books">
+          <h2>Recommended Books</h2>
+          <ul>
+            ${person.books.map(book => `<li onclick="window.location.href='book.html?id=${encodeURIComponent(book)}'">📘 ${book}</li>`).join("")}
+          </ul>
+        </div>
+      `;
+    }
+  }
+
+  async function loadBookDetails(title) {
+    const res = await fetch("data/books.json");
+    const books = await res.json();
+    const book = books.find(b => b.title === title);
+    if (book) {
+      const container = document.getElementById("bookDetails");
+      container.innerHTML = `
+        <img src="${book.image}" alt="${book.title}">
+        <h1>${book.title}</h1>
+        <p>By ${book.author}</p>
+        <div class="recommended-by">
+          <h2>Recommended by</h2>
+          <ul>
+            ${book.recommended_by.map(person => `<li onclick="window.location.href='person.html?id=${encodeURIComponent(person)}'">${person}</li>`).join("")}
+          </ul>
+        </div>
+      `;
+    }
+  }
+
+  // Load person details if on person.html
+  if (location.pathname.endsWith("person.html")) {
+    const urlParams = new URLSearchParams(window.location.search);
+    const personName = urlParams.get('id');
+    if (personName) loadPersonDetails(decodeURIComponent(personName));
+  }
+
+  // Load book details if on book.html
+  if (location.pathname.endsWith("book.html")) {
+    const urlParams = new URLSearchParams(window.location.search);
+    const bookTitle = urlParams.get('id');
+    if (bookTitle) loadBookDetails(decodeURIComponent(bookTitle));
+  }
+
   if (location.pathname.endsWith("people.html")) loadPeople();
   if (location.pathname.endsWith("books.html")) loadBooks();
   
