@@ -22,6 +22,7 @@ body {
     text-decoration: none;
     color: #111;
     margin: 0 10px;
+    font-weight: 500;
   }
   
   nav .active {
@@ -33,6 +34,12 @@ body {
     padding: 100px 20px;
   }
   
+  /* Centered titles */
+  h1, h2 {
+    text-align: center;
+    margin: 20px 0 10px;
+  }
+  
   footer {
     text-align: center;
     padding: 20px;
@@ -42,9 +49,8 @@ body {
   /* Controls */
   .controls {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     margin: 20px 0;
   }
   
@@ -58,11 +64,12 @@ body {
     background: none;
     border: 1px solid #ddd;
     cursor: pointer;
+    border-radius: 5px;
   }
   
   .controls input {
     padding: 8px;
-    width: 200px;
+    width: 220px;
     border: 1px solid #ccc;
     border-radius: 4px;
   }
@@ -77,7 +84,7 @@ body {
   }
   
   .person {
-    width: 220px;
+    width: 230px;
     text-align: center;
   }
   
@@ -98,6 +105,19 @@ body {
     color: #444;
   }
   
+  /* Recommended books under each person */
+  .recommended {
+    margin-top: 10px;
+    border-top: 1px solid #eee;
+    padding-top: 8px;
+    font-size: 0.9em;
+  }
+  
+  .recommended li {
+    list-style: none;
+    margin: 5px 0;
+  }
+  
   /* Book List */
   .book-list {
     display: flex;
@@ -108,7 +128,7 @@ body {
   }
   
   .book {
-    width: 150px;
+    width: 160px;
     text-align: center;
   }
   
