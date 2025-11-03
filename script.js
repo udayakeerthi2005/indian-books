@@ -1,8 +1,8 @@
 async function loadPeople() {
     const res = await fetch("data/people.json");
-    const people = await res.json();
-    window.peopleData = people;
-    displayPeople(people);
+    const data = await res.json();
+    window.peopleData = data;
+    displayPeople(data);
   }
   
   function displayPeople(list) {
@@ -13,24 +13,29 @@ async function loadPeople() {
       div.className = "person";
       div.innerHTML = `
         <img src="${p.image}" alt="${p.name}">
-        <h3>${p.name}</h3>
-        <p>${p.description}</p>
-        <small>${p.books.length} books recommended</small>
-        <ul class="recommended" id="rec-${p.name.replace(/\s+/g, '')}" style="display:none;"></ul>
+        <h4>${p.name}</h4>
+        <small>${p.books.length} books</small>
       `;
-      div.addEventListener("click", () => toggleBooks(p));
+      div.onclick = () => showPopup(p);
       container.appendChild(div);
     });
   }
   
-  function toggleBooks(person) {
-    const list = document.getElementById(`rec-${person.name.replace(/\s+/g, '')}`);
-    if (list.style.display === "none") {
-      list.innerHTML = person.books.map(b => `<li>📘 ${b}</li>`).join("");
-      list.style.display = "block";
-    } else {
-      list.style.display = "none";
-    }
+  function showPopup(person) {
+    const popup = document.getElementById("popup");
+    const details = document.getElementById("popupDetails");
+    details.innerHTML = `
+      <img src="${person.image}" alt="${person.name}">
+      <h2>${person.name}</h2>
+      <p>${person.description}</p>
+      <h3>Recommended Books:</h3>
+      <ul>${person.books.map(b => `<li>📘 ${b}</li>`).join("")}</ul>
+    `;
+    popup.style.display = "block";
+  }
+  
+  function closePopup() {
+    document.getElementById("popup").style.display = "none";
   }
   
   function filterPeople(type) {

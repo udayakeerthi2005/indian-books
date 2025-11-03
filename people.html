@@ -30,7 +30,15 @@
     <input type="text" id="peopleSearch" onkeyup="searchPeople()" placeholder="Search people...">
   </div>
 
-  <div class="people-list" id="peopleList"></div>
+  <div class="people-scroll" id="peopleList"></div>
+
+  <!-- Popup modal -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <div id="popupDetails"></div>
+    </div>
+  </div>
 
   <footer>Made with ❤️ by Keerthi</footer>
 </body>

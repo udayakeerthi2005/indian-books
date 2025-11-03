@@ -1,42 +1,26 @@
 [
   {
-    "name": "Kunal Shah",
-    "description": "Founder of CRED",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Kunal_Shah_2020.jpg",
-    "books": ["The Almanack of Naval Ravikant", "Zero to One"],
-    "score": 95,
-    "date": "2024-10-10"
+    "name": "A.P.J. Abdul Kalam",
+    "description": "Former President of India and scientist known for his vision and humility.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/A._P._J._Abdul_Kalam.jpg",
+    "books": ["Wings of Fire", "Ignited Minds", "The Discovery of India"],
+    "popularity": 98,
+    "date": "2024-12-01"
   },
   {
-    "name": "Tanmay Bhat",
-    "description": "Comedian & Creator",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Tanmay_Bhat.jpg",
-    "books": ["Atomic Habits", "The Subtle Art of Not Giving a F*ck"],
-    "score": 90,
-    "date": "2024-08-02"
+    "name": "Ratan Tata",
+    "description": "Industrialist and philanthropist who led the Tata Group to global heights.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Ratan_Tata_photo.jpg",
+    "books": ["Shoe Dog", "Steve Jobs", "Good to Great"],
+    "popularity": 95,
+    "date": "2025-01-12"
   },
   {
-    "name": "Ankur Warikoo",
-    "description": "Entrepreneur & Educator",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Ankur_Warikoo.jpg",
-    "books": ["Deep Work", "The Psychology of Money"],
-    "score": 92,
-    "date": "2024-09-15"
-  },
-  {
-    "name": "Nikhil Taneja",
-    "description": "Co-founder, Yuvaa",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Nikhil_Taneja_2022.jpg",
-    "books": ["Man’s Search for Meaning"],
-    "score": 85,
-    "date": "2024-11-01"
-  },
-  {
-    "name": "Ritesh Agarwal",
-    "description": "Founder of OYO",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/Ritesh_Agarwal_at_GES_2019.jpg",
-    "books": ["Shoe Dog"],
-    "score": 88,
-    "date": "2024-07-25"
+    "name": "Priyanka Chopra Jonas",
+    "description": "Actress and producer with a global influence in entertainment and philanthropy.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Priyanka_Chopra_at_Baywatch_Premiere.jpg",
+    "books": ["Becoming", "The Alchemist", "Lean In"],
+    "popularity": 90,
+    "date": "2025-02-05"
   }
 ]
