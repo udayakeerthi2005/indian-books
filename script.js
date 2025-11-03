@@ -8,7 +8,6 @@ async function loadPeople() {
   function displayPeople(list) {
     const container = document.getElementById("peopleList");
     container.innerHTML = "";
-  
     list.forEach(p => {
       const div = document.createElement("div");
       div.className = "person";
@@ -16,7 +15,7 @@ async function loadPeople() {
         <img src="${p.image}" alt="${p.name}">
         <h3>${p.name}</h3>
         <p>${p.description}</p>
-        <p class="books">Recommended ${p.books.length} books</p>
+        <small>${p.books.length} books recommended</small>
         <ul class="recommended" id="rec-${p.name.replace(/\s+/g, '')}" style="display:none;"></ul>
       `;
       div.addEventListener("click", () => toggleBooks(p));
@@ -25,19 +24,19 @@ async function loadPeople() {
   }
   
   function toggleBooks(person) {
-    const listEl = document.getElementById(`rec-${person.name.replace(/\s+/g, '')}`);
-    if (listEl.style.display === "none") {
-      listEl.innerHTML = person.books.map(b => `<li>📘 ${b}</li>`).join("");
-      listEl.style.display = "block";
+    const list = document.getElementById(`rec-${person.name.replace(/\s+/g, '')}`);
+    if (list.style.display === "none") {
+      list.innerHTML = person.books.map(b => `<li>📘 ${b}</li>`).join("");
+      list.style.display = "block";
     } else {
-      listEl.style.display = "none";
+      list.style.display = "none";
     }
   }
   
   function filterPeople(type) {
     let data = [...window.peopleData];
-    if (type === "top") data.sort((a, b) => b.score - a.score);
     if (type === "new") data.sort((a, b) => new Date(b.date) - new Date(a.date));
+    if (type === "top") data.sort((a, b) => b.popularity - a.popularity);
     if (type === "random") data.sort(() => Math.random() - 0.5);
     displayPeople(data);
   }
@@ -58,7 +57,6 @@ async function loadPeople() {
   function displayBooks(list) {
     const container = document.getElementById("bookList");
     container.innerHTML = "";
-  
     list.forEach(b => {
       const div = document.createElement("div");
       div.className = "book";
@@ -66,7 +64,7 @@ async function loadPeople() {
         <img src="${b.image}" alt="${b.title}">
         <h4>${b.title}</h4>
         <p>${b.author}</p>
-        <p style="font-size:0.9em;">Recommended by ${b.recommended_by.join(", ")}</p>
+        <small>Recommended by ${b.recommended_by.join(", ")}</small>
       `;
       container.appendChild(div);
     });
@@ -74,8 +72,8 @@ async function loadPeople() {
   
   function filterBooks(type) {
     let data = [...window.bookData];
-    if (type === "top") data.sort((a, b) => b.score - a.score);
     if (type === "new") data.sort((a, b) => new Date(b.date) - new Date(a.date));
+    if (type === "top") data.sort((a, b) => b.popularity - a.popularity);
     if (type === "random") data.sort(() => Math.random() - 0.5);
     displayBooks(data);
   }
@@ -86,7 +84,6 @@ async function loadPeople() {
     displayBooks(filtered);
   }
   
-  // Auto load depending on page
   if (location.pathname.endsWith("people.html")) loadPeople();
   if (location.pathname.endsWith("books.html")) loadBooks();
   

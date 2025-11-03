@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>People - Indian Bookmarked</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>People | Indian Bookmarked</title>
+  <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
 <body>
   <header class="flag-header">
     <nav>
-      <a href="index.html" class="logo">🇮🇳 Indian Bookmarked</a>
-      <div class="nav-links">
+      <h2>📚 Indian Bookmarked</h2>
+      <div>
+        <a href="index.html">Home</a>
         <a href="people.html" class="active">People</a>
         <a href="books.html">Books</a>
       </div>
     </nav>
   </header>
 
-  <section class="controls">
+  <h1>People</h1>
+
+  <div class="controls">
     <div class="buttons">
       <button onclick="filterPeople('new')">New</button>
       <button onclick="filterPeople('top')">Top</button>
       <button onclick="filterPeople('random')">Random</button>
     </div>
-    <input type="text" id="peopleSearch" placeholder="Search people..." oninput="searchPeople()"/>
-  </section>
+    <input type="text" id="peopleSearch" onkeyup="searchPeople()" placeholder="Search people...">
+  </div>
 
-  <main id="peopleList" class="people-list"></main>
+  <div class="people-list" id="peopleList"></div>
 
-  <footer>
-    Made with ❤️ by Keerthi
-  </footer>
+  <footer>Made with ❤️ by Keerthi</footer>
 </body>
 </html>
